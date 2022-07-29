@@ -1,7 +1,13 @@
 <script>
  
-    let  date = new Date();
- let time = date.toLocaleTimeString();
+      let time ='';
+      
+        setInterval(() => {
+           let  a = new Date(); 
+           let date = a.toLocaleDateString(undefined);
+           time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            
+        }, 1000);
     
 
 </script>
